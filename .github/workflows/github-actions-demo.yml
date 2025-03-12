@@ -18,8 +18,8 @@ jobs:
     steps:
       - name : Trigger name
         run:
-            echo " This was triggered by {{ github.event_name }} event"
-            echo " The repo is referencing to {{ github.ref }} branch"
+            echo " This was triggered by ${{ github.event_name }} event"
+            echo " The repo is referencing to ${{ github.ref }} branch"
 
       - uses: actions/checkout@v3.3.0
 
